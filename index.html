@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather</title>
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+          <a class="navbar-brand d-flex justify-content-between align-items-center" href="#">
+            <img src="./images/clouds.png" width="70px" alt="">
+            <div class="ms-3">
+                <h1 class="h6 m-0 p-0">Weather</h1>
+                <span class="text-muted fw-lighter fs-10 m-0 p-0">tagline goes here</span>
+            </div>
+          </a>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ms-auto">
+              <a class="nav-link py-0 my-0 mx-3 active" aria-current="page" href="#">Home</a>
+              <a class="nav-link py-0 my-0 mx-3" href="#">News</a>
+              <a class="nav-link py-0 my-0 mx-3" href="#">Live cameras</a>
+              <a class="nav-link py-0 my-0 mx-3" href="#">Photos</a>
+              <a class="nav-link py-0 my-0 mx-3" href="#">Contact</a>
+            </div>
+          </div>
+        </div>
+    </nav>
+    <div class="divider position-relative vh-100">
+        <div class="header"></div>
+        <div class="container w-75 mx-auto position-absolute content py-5 weather my-5">
+            <form class="d-flex justify-content-center align-items-center mx-auto p-2 border-radius-50 bg-dark .city">
+                <input type="search" name="city" id="city" placeholder="Find Your Location..." class="form-control border-0">
+                <button class="btn btn-primary border-radius-50 px-5">Find</button>
+            </form>
+            <div class="row border-radius-15 overflow-hidden mt-5">
+            </div>
+        </div>
+    </div>
+    <footer class="mt-50 footer">
+        <div class="container py-5">
+            <div class="d-flex justify-content-between align-items-center">
+                <form class="d-flex justify-content-center align-items-center mx-auto p-2 border-radius-50 bg-dark w-50">
+                    <input type="search" name="city" id="city" placeholder="Enter your E-mail to subscribe..." class="form-control border-0">
+                    <button class="btn btn-primary border-radius-50 px-5">Subscribe</button>
+                </form>
+                <div class="d-flex align-items-center justify-content-center w-50">
+                    <ul class="d-flex justify-content-evenly align-items-center mb-0 pb-0 w-50 mx-auto">
+                        <li class="social"><a href="#" class="d-flex align-items-center justify-content-center p-4 rounded-circle bg-dark text-decoration-none fwh"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li class="social"><a href="#" class="d-flex align-items-center justify-content-center p-4 rounded-circle bg-dark text-decoration-none fwh"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li class="social"><a href="#" class="d-flex align-items-center justify-content-center p-4 rounded-circle bg-dark text-decoration-none fwh"><i class="fa-brands fa-google-plus-g"></i></a></li>
+                        <li class="social"><a href="#" class="d-flex align-items-center justify-content-center p-4 rounded-circle bg-dark text-decoration-none fwh"><i class="fa-brands fa-pinterest-p"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <p class="mt-3 fw-light">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+        </div>
+    </footer>
+    <script src="./js/index.js"></script>
+</body>
+</html>
